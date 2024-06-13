@@ -27,7 +27,7 @@ To get started with the Dart Promise library, add it to your Dart project by inc
 
 ```yaml
 dependencies:
-  dart_promise: ^0.0.1
+  dart_promise: ^0.0.1+1
 ```
 
 ## Usage
