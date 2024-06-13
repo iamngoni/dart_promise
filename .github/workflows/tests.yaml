@@ -10,8 +10,10 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: "12.x"
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.23.0-0.1.pre"
+          channel: "master"
+          flutter-version: "3.22.0-36.0.pre.25"
+      - run: flutter --version
       - run: flutter pub get
       - run: flutter test
