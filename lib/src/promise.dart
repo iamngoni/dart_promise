@@ -45,7 +45,7 @@ class Promise<T> {
     });
   }
 
-  Future<T> catchError(OnRejected<T> onRejected) {
+  FutureOr<T> catchError(OnRejected<T> onRejected) {
     return _future.catchError((Object error) async {
       try {
         return onRejected(error);
